@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cyrus Felix is an Information Technology student interested in software development and cloud technologies.">
+  <meta name="theme-color" content="#07111b">
+  <title>Cyrus Felix | IT Student &amp; Aspiring Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="intro-overlay" id="portfolioIntro" role="dialog" aria-modal="true" aria-labelledby="introTitle" aria-describedby="introSubtitle">
+    <canvas class="intro-canvas" id="introCanvas" aria-hidden="true"></canvas>
+    <div class="intro-nebula" aria-hidden="true"></div>
+    <div class="intro-rings" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="intro-flash" aria-hidden="true"></div>
+    <svg class="intro-lightning" viewBox="0 0 1200 480" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <filter id="lightningGlow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="9" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <g class="lightning-outer" filter="url(#lightningGlow)">
+        <path pathLength="1" d="M-20 305 105 274 177 296 259 222 327 252 399 183 475 229 550 146 615 191 694 121 746 173 829 91 887 145 970 70 1024 112 1125 34 1220 70"/>
+        <path pathLength="1" d="M258 222 229 156 278 125 255 74"/>
+        <path pathLength="1" d="M399 183 380 121 418 91 406 42"/>
+        <path pathLength="1" d="M550 146 534 91 564 55 555 8"/>
+        <path pathLength="1" d="M694 121 715 72 696 31 718 -4"/>
+        <path pathLength="1" d="M829 91 846 41 830 5 852 -27"/>
+        <path pathLength="1" d="M970 70 950 27 977 -7"/>
+        <path pathLength="1" d="M746 173 776 222 756 266 791 302"/>
+        <path pathLength="1" d="M475 229 453 285 485 322 466 365"/>
+        <path pathLength="1" d="M1024 112 1065 155 1051 193 1098 220"/>
+      </g>
+      <g class="lightning-core">
+        <path pathLength="1" d="M-20 305 105 274 177 296 259 222 327 252 399 183 475 229 550 146 615 191 694 121 746 173 829 91 887 145 970 70 1024 112 1125 34 1220 70"/>
+        <path pathLength="1" d="M258 222 229 156 278 125 255 74"/>
+        <path pathLength="1" d="M399 183 380 121 418 91 406 42"/>
+        <path pathLength="1" d="M550 146 534 91 564 55 555 8"/>
+        <path pathLength="1" d="M694 121 715 72 696 31 718 -4"/>
+        <path pathLength="1" d="M829 91 846 41 830 5 852 -27"/>
+        <path pathLength="1" d="M970 70 950 27 977 -7"/>
+        <path pathLength="1" d="M746 173 776 222 756 266 791 302"/>
+        <path pathLength="1" d="M475 229 453 285 485 322 466 365"/>
+        <path pathLength="1" d="M1024 112 1065 155 1051 193 1098 220"/>
+      </g>
+    </svg>
+    <div class="intro-copy">
+      <p class="intro-kicker">CYRUS FELIX <span></span> DIGITAL PORTFOLIO</p>
+      <h1 class="intro-title" id="introTitle" aria-label="Welcome to my portfolio">WELCOME TO MY PORTFOLIO</h1>
+      <p class="intro-subtitle" id="introSubtitle">CYRUS FELIX <span aria-hidden="true">|</span> IT STUDENT &amp; ASPIRING DEVELOPER</p>
+      <div class="intro-rule" aria-hidden="true"><span></span></div>
+    </div>
+    <button class="intro-skip" id="introSkip" type="button">Skip intro <span aria-hidden="true">↗</span></button>
+  </section>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Cyrus Felix portfolio home"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>Cyrus<span class="accent">Felix</span></span></a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-controls="nav" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#certificates" class="nav-link">Achievements</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link nav-contact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home" aria-labelledby="home-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO INTERNSHIPS &amp; COLLABORATION</p>
+        <h1 id="home-title" aria-label="Building digital experiences that matter.">HI I'M<br><span class="gradient-text typewriter-text" data-typewriter aria-hidden="true">CYRUS WILY LUIS F. FELIX</span></h1>
+        <p class="hero-description"> A third-year IT student and aspiring developer exploring software, the cloud, and thoughtful ways to solve everyday problems.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#contact">Let's connect</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="glow" aria-hidden="true"></div><div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+        <figure class="profile-panel profile-portrait">
+          <div class="profile-header"><span class="profile-badge">IT STUDENT</span><span class="profile-status"><span class="status-dot"></span> Open to opportunities</span></div>
+          <img class="profile-photo" src="profile.jpg" alt="Portrait of Cyrus Felix, IT student and aspiring developer">
+          <figcaption class="profile-caption"><strong>Cyrus Felix</strong><span>IT Student · Aspiring Developer</span></figcaption>
+        </figure>
+        <div class="app-orbit" role="list" aria-label="Tools and technologies">
+          <span class="app-float app-vscode" role="listitem"><span class="app-chip"><span class="app-symbol" aria-hidden="true">&lt;/&gt;</span>VS Code</span></span>
+          <span class="app-float app-github" role="listitem"><span class="app-chip"><span class="app-symbol" aria-hidden="true">GH</span>GitHub</span></span>
+          <span class="app-float app-python" role="listitem"><span class="app-chip"><span class="app-symbol" aria-hidden="true">Py</span>Python</span></span>
+          <span class="app-float app-aws" role="listitem"><span class="app-chip"><span class="app-symbol" aria-hidden="true">AWS</span>AWS</span></span>
+          <span class="app-float app-react" role="listitem"><span class="app-chip"><span class="app-symbol" aria-hidden="true">◉</span>React</span></span>
+          <span class="app-float app-mysql" role="listitem"><span class="app-chip"><span class="app-symbol" aria-hidden="true">SQL</span>MySQL</span></span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="tech-ribbon" aria-label="Technologies and areas of interest">
+      <div class="tech-track">
+        <div class="tech-group">
+          <span>PYTHON</span><i aria-hidden="true">✳</i><span>JAVASCRIPT</span><i aria-hidden="true">✳</i><span>ASP.NET CORE</span><i aria-hidden="true">✳</i><span>MYSQL</span><i aria-hidden="true">✳</i><span>CLOUD</span><i aria-hidden="true">✳</i><span>UI / UX</span><i aria-hidden="true">✳</i>
+        </div>
+        <div class="tech-group" aria-hidden="true">
+          <span>PYTHON</span><i>✳</i><span>JAVASCRIPT</span><i>✳</i><span>ASP.NET CORE</span><i>✳</i><span>MYSQL</span><i>✳</i><span>CLOUD</span><i>✳</i><span>UI / UX</span><i>✳</i>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="about" aria-labelledby="about-title">
+      <div class="section-heading"><p class="eyebrow">01 / GET TO KNOW ME</p><h2 id="about-title">A little <span class="gradient-text">about me.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-column about-intro">
+          <div class="about-note"><div class="quote-mark" aria-hidden="true">“</div><p>Learning how technology works and how to make it work better for people.</p><div class="note-line"></div><span>MY APPROACH</span></div>
+          <p class="about-lead">I'm a <strong>third-year Information Technology student</strong> interested in software development and cloud technologies. I enjoy turning ideas into useful projects, learning how systems fit together, and improving through hands-on practice.</p>
+        </div>
+        <div class="about-portrait-stage" role="group" aria-label="Portrait surrounded by technology skills">
+          <div class="about-portrait-glow" aria-hidden="true"></div>
+          <div class="about-portrait-ring about-ring-one" aria-hidden="true"></div>
+          <div class="about-portrait-ring about-ring-two" aria-hidden="true"></div>
+          <div class="about-orbit" aria-hidden="true">
+            <span class="about-orbit-icon orbit-html" style="--orbit-angle:0deg">HTML</span>
+            <span class="about-orbit-icon orbit-css" style="--orbit-angle:40deg">CSS</span>
+            <span class="about-orbit-icon orbit-js" style="--orbit-angle:80deg">JS</span>
+            <span class="about-orbit-icon orbit-python" style="--orbit-angle:120deg">Py</span>
+            <span class="about-orbit-icon orbit-mysql" style="--orbit-angle:160deg">SQL</span>
+            <span class="about-orbit-icon orbit-react" style="--orbit-angle:200deg">React</span>
+            <span class="about-orbit-icon orbit-csharp" style="--orbit-angle:240deg">C#</span>
+            <span class="about-orbit-icon orbit-aws" style="--orbit-angle:280deg">AWS</span>
+            <span class="about-orbit-icon orbit-git" style="--orbit-angle:320deg">Git</span>
+          </div>
+          <figure class="about-portrait">
+            <img src="profile.jpg" alt="Portrait of Cyrus Felix, IT student and aspiring developer">
+          </figure>
+        </div>
+        <div class="about-column about-content">
+          <p>I'm building a strong foundation in programming, web development, databases, and cloud tools, and I'm looking for opportunities to learn from a team and contribute thoughtfully.</p>
+          <div class="quick-facts fact-grid">
+            <div><span class="fact-icon" aria-hidden="true">⌘</span><div><strong>Degree</strong><small>BS Information Technology</small></div></div>
+            <div><span class="fact-icon" aria-hidden="true">⌂</span><div><strong>University</strong><small>Divine Word College of Calapan </small></div></div>
+            <div><span class="fact-icon" aria-hidden="true">◎</span><div><strong>Location</strong><small>Calapan City, Oriental Mindoro</small></div></div>
+            <div><span class="fact-icon" aria-hidden="true">⌘</span><div><strong>Focus areas</strong><small>Software development &amp; cloud</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading"><p class="eyebrow">02 / WHAT I'M LEARNING</p><h2 id="skills-title">Skills &amp; <span class="gradient-text">toolkit.</span></h2><p class="section-intro">A snapshot of technologies and strengths I'm developing through coursework and sample projects.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-icon purple-icon" aria-hidden="true">{ }</div><h3>Programming</h3><p>Building logic and practical programming foundations.</p><div class="tag-list"><span>Python</span><span>Java</span><span>JavaScript</span><span>C#</span></div></article>
+        <article class="skill-card"><div class="skill-icon blue-icon" aria-hidden="true">▧</div><h3>Web development</h3><p>Creating responsive, accessible web experiences.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>React</span><span>Node.js</span></div></article>
+        <article class="skill-card"><div class="skill-icon green-icon" aria-hidden="true">▤</div><h3>Databases</h3><p>Modeling data and writing useful queries.</p><div class="tag-list"><span>MySQL</span><span>PostgreSQL</span><span>SQL</span></div></article>
+        <article class="skill-card"><div class="skill-icon orange-icon" aria-hidden="true">☁</div><h3>Cloud &amp; DevOps</h3><p>Exploring cloud fundamentals and deployment workflows.</p><div class="tag-list"><span>AWS</span><span>Linux</span><span>Git</span><span>Docker</span></div></article>
+        <article class="skill-card"><div class="skill-icon purple-icon" aria-hidden="true">◈</div><h3>Data &amp; AI</h3><p>Learning to prepare data and explore applied AI.</p><div class="tag-list"><span>Python</span><span>Pandas</span><span>Jupyter</span><span>AI basics</span></div></article>
+        <article class="skill-card"><div class="skill-icon blue-icon" aria-hidden="true">✎</div><h3>Design &amp; workflow</h3><p>Planning clear interfaces and keeping work organized.</p><div class="tag-list"><span>Figma</span><span>UI basics</span><span>VS Code</span><span>Agile</span></div></article>
+        <article class="skill-card"><div class="skill-icon green-icon" aria-hidden="true">◎</div><h3>Problem solving</h3><p>Breaking complex tasks into clear, testable steps.</p><div class="tag-list"><span>Debugging</span><span>Research</span><span>Analysis</span></div></article>
+        <article class="skill-card"><div class="skill-icon orange-icon" aria-hidden="true">↗</div><h3>Communication</h3><p>Collaborating, documenting, and sharing ideas clearly.</p><div class="tag-list"><span>Teamwork</span><span>Documentation</span><span>Presentations</span></div></article>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="projects" aria-labelledby="projects-title">
+      <div class="projects-heading"><div class="section-heading"><p class="eyebrow">03 / SELECTED WORK</p><h2 id="projects-title">Projects in <span class="gradient-text">progress.</span></h2><p class="section-intro">A cafe management web app for organizing products, inventory, sales, and reports.</p></div><span class="project-count">01 PROJECT</span></div>
+      <div class="projects-grid">
+        <article class="project-card"><div class="project-visual database-visual" role="img" aria-label="Abstract green interface illustration for the Nomu Nomu cafe management app"><div class="mini-ui" aria-hidden="true"><span class="mini-ui-line"></span><span class="mini-ui-line short"></span><span class="mini-ui-card"></span><span class="mini-ui-card"></span></div><span class="visual-label">CAFE OPERATIONS / INVENTORY</span></div><div class="project-body"><div class="project-type">CAFE MANAGEMENT · WEB APPLICATION</div><h3>Nomu Nomu</h3><p>A cafe management app for tracking products, ingredients, stock, sales, and reports.</p><div class="tag-list"><span>C#</span><span>ASP.NET Core MVC</span><span>MySQL</span></div><a class="project-link" href="https://github.com/cyrusfelix31/nomu-nomu" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></div></article>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="certificates" aria-labelledby="certificates-title">
+      <div class="section-heading"><p class="eyebrow">04 / LEARNING &amp; RECOGNITION</p><h2 id="certificates-title">Certifications &amp; <span class="gradient-text">achievements.</span></h2><p class="section-intro">Certificates from my learning journey. Select a preview to open the original image.</p></div>
+      <div class="credential-grid">
+        <article class="credential-item"><a class="credential-preview" href="FELIX_Proof%20of%20tesda.jpg" target="_blank" rel="noopener noreferrer"><img class="credential-image" src="FELIX_Proof%20of%20tesda.jpg" alt="Cyrus Felix's TESDA Programming (Java) NC III certificate"></a><div class="credential-copy"><span class="project-type">TESDA · TECHNICAL TRAINING</span><h3>Programming (Java) NC III</h3><p>TESDA training certificate in the Programming (Java) NC III qualification.</p><div class="tag-list"><span>Java</span><span>Programming</span><span>TESDA</span></div></div></article>
+        <article class="credential-item"><a class="credential-preview" href="TP-3JTH6FVK.jpg" target="_blank" rel="noopener noreferrer"><img class="credential-image" src="TP-3JTH6FVK.jpg" alt="Cyrus Felix's TutorialsPoint certificate for mastering data science and machine learning"></a><div class="credential-copy"><span class="project-type">TUTORIALSPOINT · MAY 2026</span><h3>Data Science &amp; Machine Learning</h3><p>Certificate of completion for the Mastering Data Science and Machine Learning course.</p><div class="tag-list"><span>Data Science</span><span>Machine Learning</span></div></div></article>
+        <article class="credential-item"><a class="credential-preview" href="Screenshot%202026-10-09%20120857.png" target="_blank" rel="noopener noreferrer"><img class="credential-image" src="Screenshot%202026-10-09%20120857.png" alt="Cyrus Felix's Cisco Networking Academy JavaScript Essentials 1 certificate"></a><div class="credential-copy"><span class="project-type">CISCO NETWORKING ACADEMY · MAY 2026</span><h3>JavaScript Essentials 1</h3><p>Course certificate from Cisco Networking Academy in collaboration with OpenEDG JavaScript Institute.</p><div class="tag-list"><span>JavaScript</span><span>Programming</span></div></div></article>
+        <article class="credential-item"><a class="credential-preview" href="Screenshot%202026-10-09%20120916.png" target="_blank" rel="noopener noreferrer"><img class="credential-image" src="Screenshot%202026-10-09%20120916.png" alt="Cyrus Felix's Simplilearn Introduction to Project Management certificate"></a><div class="credential-copy"><span class="project-type">SIMPLILEARN · MAY 2026</span><h3>Introduction to Project Management</h3><p>Certificate of completion for an introductory course in project management.</p><div class="tag-list"><span>Project Management</span><span>Planning</span></div></div></article>
+        <article class="credential-item"><a class="credential-preview" href="Screenshot%202026-10-09%20121142.png" target="_blank" rel="noopener noreferrer"><img class="credential-image" src="Screenshot%202026-10-09%20121142.png" alt="Cyrus Felix's Simplilearn SkillUp SQL Projects certificate"></a><div class="credential-copy"><span class="project-type">SIMPLILEARN SKILLUP · MAY 2026</span><h3>SQL Projects</h3><p>Course certificate recognizing completed SQL project work.</p><div class="tag-list"><span>SQL</span><span>Databases</span></div></div></article>
+        <article class="credential-item"><a class="credential-preview" href="Screenshot%202026-10-09%20121201.png" target="_blank" rel="noopener noreferrer"><img class="credential-image" src="Screenshot%202026-10-09%20121201.png" alt="Cyrus Felix's Simplilearn SkillUp Introduction to SQL certificate"></a><div class="credential-copy"><span class="project-type">SIMPLILEARN SKILLUP · MAY 2026</span><h3>Introduction to SQL</h3><p>Course certificate covering introductory SQL and database concepts.</p><div class="tag-list"><span>SQL</span><span>Databases</span></div></div></article>
+        <article class="credential-item"><a class="credential-preview" href="Screenshot%202026-10-09%20121218.png" target="_blank" rel="noopener noreferrer"><img class="credential-image" src="Screenshot%202026-10-09%20121218.png" alt="Cyrus Felix's SkillUp SQL for Data Science certificate"></a><div class="credential-copy"><span class="project-type">SKILLUP · MAY 2026</span><h3>SQL for Data Science</h3><p>Course certificate in applying SQL to data science and analysis workflows.</p><div class="tag-list"><span>SQL</span><span>Data Science</span></div></div></article>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><p class="eyebrow">05 / GROWTH &amp; LEADERSHIP</p><h2 id="experience-title">Experience &amp; <span class="gradient-text">community.</span></h2><p class="section-intro">Ways I have practiced collaboration, support, and responsibility through academic and technical work.</p></div>
+      <div class="experience-list">
+        <article class="experience-item"><div class="experience-date">ACADEMIC COLLABORATION</div><div><h3>Class Projects &amp; Teamwork</h3><p class="experience-org">Coursework and group assignments</p><p>Worked with classmates on assignments, presentations, and technical exercises that called for planning, communication, and shared accountability.</p></div></article>
+        <article class="experience-item"><div class="experience-date">PEER SUPPORT</div><div><h3>Supporting Classmates</h3><p class="experience-org">Programming, web design, and systems topics</p><p>Helped classmates work through technical concepts by explaining steps clearly and encouraging practical, hands-on learning.</p></div></article>
+        <article class="experience-item"><div class="experience-date">PROJECT COORDINATION</div><div><h3>Organizing Team Work</h3><p class="experience-org">Collaborative academic activities</p><p>Contributed to team-based work by organizing tasks, clarifying responsibilities, and helping keep shared progress on track.</p></div></article>
+      </div>
+      <p class="small-note">This section reflects the academic collaboration, peer support, and project coordination details previously included in the portfolio.</p>
+    </section>
+
+    <section class="section-wrap section-block contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-copy"><p class="eyebrow">06 / LET'S CONNECT</p><h2 id="contact-title">Have a project in <span class="gradient-text">mind?</span></h2><p class="section-intro">I'm always glad to connect with people who care about building useful technology. Reach out about an internship, a collaboration, or just to say hello.</p></div>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:cyrusfelix31@gmail.com"><span class="contact-icon" aria-hidden="true">✉</span><span><small>EMAIL</small><strong>cyrusfelix31@gmail.com</strong></span><span aria-hidden="true">↗</span></a>
+        <a class="contact-card" href="https://github.com/cyrusfelix31" target="_blank" rel="noopener noreferrer"><span class="contact-icon" aria-hidden="true">⌘</span><span><small>GITHUB</small><strong>github.com/cyrusfelix31</strong></span><span aria-hidden="true">↗</span></a>
+        <div class="contact-card contact-location"><span class="contact-icon" aria-hidden="true">◎</span><span><small>LOCATION</small><strong>Calapan City, Oriental Mindoro</strong></span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#home" aria-label="Back to home"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>Cyrus<span class="accent">Felix</span></span></a><p>Designed with curiosity. Built with code.</p><span>© <span id="year"></span> Cyrus Felix </span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
